@@ -1,0 +1,41 @@
+TODO--> ej.py
+1. Tres formas diferentes de hacer imprimir por consola un nombre dado, y
+pidiendo una cantidad determinada de repeticiones mediante un input.
+
+
+TODO--> ej1.py
+1. Uso de:
+variable.capitalize()
+variable.upper()
+len(variable)
+
+2. Simple ejercicio para el cálculo de un salario.
+
+3. Cálculo de iva a un 21%.
+
+4. Comparar el > y el < ó la igualdad ==.
+
+
+TODO-->ej2.py
+1. Cálculo de mayor de edad o menor.
+
+2. Uso de ciclos while y for, dando los mismos resultadoes.
+En estos casos hago uso de variables para establecer cantidad de repeticiones y texto.
+
+3. Determina si el número en cuestión es par o impar.
+
+TODO-->ej3.py
+1. Buscar e implimir por consola los numeros impares, con los métodos while y for.
+
+2. Lo mismo per de manera inversa, es decir, comienza desde el final.
+
+TODO-->ej4.py
+1. Simple ejemplo de imprimir por consola.
+
+TODO-->ej5.py
+1. Tabla de multipicar
+
+2. Contador en reversa. 
+
+3. Se cuenta la cantidad de letras que hay en una frase determinada.
+Ejemplo de un contador.
