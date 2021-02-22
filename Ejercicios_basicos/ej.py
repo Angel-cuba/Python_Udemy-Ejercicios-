@@ -15,5 +15,3 @@ print("************************************************")
 for i in range(numero):
           print(nombre)
 
-print("************************************************")
-print(nombre.capitalize())
