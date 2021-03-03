@@ -7,11 +7,11 @@ print((nombre + "\n")* numero)
 # Ciclo while
 print("************************************************")
 while (numero > 0):
-          print(nombre)
+          print('while',nombre)
           numero -= 1
 
 # Ciclo for
 print("************************************************")
 for i in range(numero):
-          print(nombre)
+          print('for',nombre)
 
