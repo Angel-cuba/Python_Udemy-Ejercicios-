@@ -20,3 +20,6 @@ def create(db, cursor):
           db.commit()
      else:
           print("Ingresa los datos correctamente")
+
+def getUser(db, cursor):
+     pass

@@ -1,5 +1,5 @@
 import sqlite3
-from funciones import create
+from funciones import (create, getUser)
 
 
 db = sqlite3.connect("Base.db")
@@ -17,11 +17,21 @@ while True:
      """)
      opcion = input("Ingresa una opcion: ")
      if opcion.isnumeric():
-          if opcion.isnumeric():
+          # if opcion.isnumeric():
                if opcion == "1":
                     create(db, cursor)
      else:
           print("Ingresa un número de opción válido")
+     
+
+     # Obtener un registro
+     opcion = input("Ingresa una opción: ")
+
+     if opcion.isnumeric():
+          if opcion == "2":
+               getUser(db, cursor)
+          else:
+               print("Ingresa un número de opción válido")
 
 
 cursor.close()
