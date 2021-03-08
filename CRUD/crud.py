@@ -1,9 +1,6 @@
-import sqlite3
-from funciones import (create, getUser)
+from funciones import create, getUser, getAll, upDate, delete_person
+# import sqlite3
 
-
-db = sqlite3.connect("Base.db")
-cursor = db.cursor()
 
 print("Starting CRUD")
 while True:
@@ -20,18 +17,38 @@ while True:
           # if opcion.isnumeric():
                if opcion == "1":
                     create(db, cursor)
+          # Obtener un registro 
+               elif opcion == "2":
+                    getUser(cursor)
+
+          #Obtener todos los registros
+               elif opcion == "3":
+                    getAll(cursor)
+
+          # Actualizar los registros
+               elif opcion == "4":
+                    upDate(db,cursor)
+               
+               elif opcion == "5":
+                    delete_person(db, cursor)
+
+               elif opcion == "6":
+                    cursor.close()
+                    print("Gracias")
+                    break
      else:
           print("Ingresa un número de opción válido")
      
 
      # Obtener un registro
-     opcion = input("Ingresa una opción: ")
+     # opcion = input("Ingresa una opción: ")
 
-     if opcion.isnumeric():
-          if opcion == "2":
-               getUser(db, cursor)
-          else:
-               print("Ingresa un número de opción válido")
+     # if opcion.isnumeric():
+     #      if opcion == "2":
+     #           # getUser(db, cursor)
+
+     #           pass
+     #      else:
+     #           print("Ingresa un número de opción válido")
 
 
-cursor.close()
