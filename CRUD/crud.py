@@ -1,4 +1,4 @@
-from funciones import create, getUser, getAll, upDate, delete_person
+from funciones import create, getUser, getAll, upDate, deleteUser
 # import sqlite3
 
 
@@ -16,24 +16,23 @@ while True:
      if opcion.isnumeric():
           # if opcion.isnumeric():
                if opcion == "1":
-                    create(db, cursor)
+                    create()
           # Obtener un registro 
                elif opcion == "2":
-                    getUser(cursor)
+                    getUser()
 
           #Obtener todos los registros
                elif opcion == "3":
-                    getAll(cursor)
+                    getAll()
 
           # Actualizar los registros
                elif opcion == "4":
-                    upDate(db,cursor)
+                    upDate()
                
                elif opcion == "5":
-                    delete_person(db, cursor)
+                    deleteUser()
 
                elif opcion == "6":
-                    cursor.close()
                     print("Gracias")
                     break
      else:

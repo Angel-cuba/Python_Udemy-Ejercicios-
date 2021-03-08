@@ -60,26 +60,28 @@ def getUser():
 def getAll():
      db, cursor = conection()
      cursor.execute(f"SELECT * FROM Personas")
-     cursor.close()
      print(cursor.fetchall())
+     cursor.close()
+     db.close()
 
 def upDate():
      db, cursor = conection()
      dato = getUser(cursor)
-     if (dato):
+     if dato:
           nombre = input("Ingresa el nuevo nombre: ")
           apellido = input("Ingresa el nuevo apellido: ")
           cursor.execute(f"UPDATE Personas SET nombre='{nombre}',apellido='{apellido}' WHERE id={dato[0]}")
-          cursor.close()
           db.commit()
+     cursor.close()
      db.close()
      
-def delete_person():
+def deleteUser():
      db, cursor = conection()
-
-     dato = getUser(cursor)
+     dato = getUser()
      if dato:
           cursor.execute(f"DELETE FROM Personas WHERE id={dato[0]}")
-          cursor.close()
           db.commit()
+
+     cursor.close()
+     
      db.close()
