@@ -39,15 +39,4 @@ while True:
           print("Ingresa un número de opción válido")
      
 
-     # Obtener un registro
-     # opcion = input("Ingresa una opción: ")
-
-     # if opcion.isnumeric():
-     #      if opcion == "2":
-     #           # getUser(db, cursor)
-
-     #           pass
-     #      else:
-     #           print("Ingresa un número de opción válido")
-
 
